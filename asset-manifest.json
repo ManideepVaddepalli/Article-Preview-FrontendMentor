@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Article-Preview-FrontendMentor/static/css/main.f81b6f59.css",
+    "main.js": "/Article-Preview-FrontendMentor/static/js/main.fb1d2f09.js",
+    "static/media/drawers.jpg": "/Article-Preview-FrontendMentor/static/media/drawers.631135b079e9f19bada8.jpg",
+    "index.html": "/Article-Preview-FrontendMentor/index.html",
+    "main.f81b6f59.css.map": "/Article-Preview-FrontendMentor/static/css/main.f81b6f59.css.map",
+    "main.fb1d2f09.js.map": "/Article-Preview-FrontendMentor/static/js/main.fb1d2f09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f81b6f59.css",
+    "static/js/main.fb1d2f09.js"
+  ]
+}
