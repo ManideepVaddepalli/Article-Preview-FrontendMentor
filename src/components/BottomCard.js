@@ -48,7 +48,7 @@ function resizeFun() {
     var popup = document.getElementsByClassName("popup");
     popup = popup[0];
     popup.classList.add("hide");
-  } else if (window.innerWidth >= 767) {
+  } if (window.innerWidth >= 767) {
     var botcard = document.getElementsByClassName("bot-card-share");
     botcard[0].classList.add("hide");
     document.querySelector(".botcard").classList.remove("hide");
