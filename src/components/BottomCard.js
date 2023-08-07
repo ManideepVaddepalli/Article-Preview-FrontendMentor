@@ -50,7 +50,7 @@ function resizeFun() {
     popup.classList.add("hide");
   } else if (window.innerWidth >= 767) {
     var botcard = document.getElementsByClassName("bot-card-share");
-    botcard[0].classList.add("hide");
+    console.log(botcard);
     document.querySelector(".botcard").classList.remove("hide");
   }
 }
