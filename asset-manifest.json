@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Article-Preview-FrontendMentor/static/css/main.434e2dad.css",
-    "main.js": "/Article-Preview-FrontendMentor/static/js/main.94dfa1e3.js",
+    "main.js": "/Article-Preview-FrontendMentor/static/js/main.1a4aabbe.js",
     "static/media/drawers.jpg": "/Article-Preview-FrontendMentor/static/media/drawers.631135b079e9f19bada8.jpg",
     "index.html": "/Article-Preview-FrontendMentor/index.html",
     "main.434e2dad.css.map": "/Article-Preview-FrontendMentor/static/css/main.434e2dad.css.map",
-    "main.94dfa1e3.js.map": "/Article-Preview-FrontendMentor/static/js/main.94dfa1e3.js.map"
+    "main.1a4aabbe.js.map": "/Article-Preview-FrontendMentor/static/js/main.1a4aabbe.js.map"
   },
   "entrypoints": [
     "static/css/main.434e2dad.css",
-    "static/js/main.94dfa1e3.js"
+    "static/js/main.1a4aabbe.js"
   ]
 }
