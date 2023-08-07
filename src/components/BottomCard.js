@@ -21,13 +21,13 @@ export default function BottomCard() {
     </div>
   );
 }
-var popup = document.getElementsByClassName("popup");
-popup = popup[0];
 function shareShow() {
   if (window.innerWidth < 767) {
     document.querySelector(".bot-card-share").classList.remove("hide");
     document.querySelector(".botcard").classList.add("hide");
   } else {
+    var popup = document.getElementsByClassName("popup");
+    popup = popup[0];
     popup.classList.toggle("hide");
     functionforcordinate();
     var left = leftCordinate - 105;
@@ -45,7 +45,13 @@ function resizeFun() {
     "sharebutton"
   ).style = `transform:translate(${left}px,${top}px)`;
   if (window.innerWidth < 767) {
+    var popup = document.getElementsByClassName("popup");
+    popup = popup[0];
     popup.classList.add("hide");
+  } else if (window.innerWidth >= 767) {
+    var botcard = document.getElementsByClassName("bot-card-share");
+    botcard[0].classList.add("hide");
+    document.querySelector(".botcard").classList.remove("hide");
   }
 }
 window.addEventListener("resize", resizeFun);
