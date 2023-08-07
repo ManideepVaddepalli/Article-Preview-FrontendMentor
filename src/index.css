@@ -109,6 +109,7 @@ body {
   .content {
     width: 85vw;
     height: initial;
+    min-width: 667px;
     max-width: 800px;
     flex-direction: row;
   }

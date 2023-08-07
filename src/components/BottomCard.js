@@ -1,4 +1,5 @@
 import React from "react";
+import { useMemo } from "react";
 import functionforcordinate from "./functionforcordinates";
 import { leftCordinate, topCordinate } from "./functionforcordinates";
 export default function BottomCard() {
@@ -20,15 +21,13 @@ export default function BottomCard() {
     </div>
   );
 }
+var popup = document.getElementsByClassName("popup");
+popup = popup[0];
 function shareShow() {
-  let bodyVar = document.getElementsByClassName("content");
-  if (bodyVar[0].offsetWidth < 666) {
+  if (window.innerWidth < 767) {
     document.querySelector(".bot-card-share").classList.remove("hide");
     document.querySelector(".botcard").classList.add("hide");
   } else {
-    console.log("working");
-    var popup = document.getElementsByClassName("popup");
-    popup = popup[0];
     popup.classList.toggle("hide");
     functionforcordinate();
     var left = leftCordinate - 105;
@@ -38,3 +37,15 @@ function shareShow() {
     ).style = `transform:translate(${left}px,${top}px)`;
   }
 }
+function resizeFun() {
+  functionforcordinate();
+  var left = leftCordinate - 105;
+  var top = topCordinate - 70;
+  document.getElementById(
+    "sharebutton"
+  ).style = `transform:translate(${left}px,${top}px)`;
+  if (window.innerWidth < 767) {
+    popup.classList.add("hide");
+  }
+}
+window.addEventListener("resize", resizeFun);
